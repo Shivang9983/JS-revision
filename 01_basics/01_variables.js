@@ -1,14 +1,14 @@
 const accountId = 144553
-let accountEmail = "hitesh@google.com"
-var accountPassword = "12345"
+let accountEmail = "wButcher11@gmail.com"
+var accountPassword = "wOiii12"
 accountCity = "Jaipur"
 let accountState;
 
 // accountId = 2 // not allowed
 
 
-accountEmail = "hc@hc.com"
-accountPassword = "21212121"
+accountEmail = "Butcher@gmail.com"
+accountPassword = "rememberme"
 accountCity = "Bengaluru"
 
 console.log(accountId);
