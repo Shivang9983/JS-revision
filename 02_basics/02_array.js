@@ -1,3 +1,27 @@
+// 1. Creating an Array using bracket literal syntax
+const fruits = ['Apple', 'Banana', 'Orange'];
+
+// 2. Accessing elements using zero-based indexing
+console.log(fruits[0]); // Output: 'Apple' (First item)
+console.log(fruits[1]); // Output: 'Banana'
+
+// 3. Finding the size of the array
+console.log(fruits.length); // Output: 3
+
+// 4. Modifying an existing item
+fruits[1] = 'Mango'; // Changes 'Banana' to 'Mango'
+
+// 5. Adding an item to the end of the array
+fruits.push('Grapes'); 
+console.log(fruits); // Output: ['Apple', 'Mango', 'Orange', 'Grapes']
+
+// 6. Removing the last item from the array
+const lastFruit = fruits.pop(); 
+console.log(lastFruit); // Output: 'Grapes'
+
+// A new phase
+
+
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
