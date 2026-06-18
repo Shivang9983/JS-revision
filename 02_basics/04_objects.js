@@ -80,3 +80,32 @@ console.log(instructor);
     {}
 ]
 
+
+
+
+const user = {
+  firstName: 'spider',
+  age: 30,
+  isEmployee: true,
+  // 2. Adding a Method (a function belonging to an object)
+  greet: function() {
+    console.log(`Hello, my name is ${this.firstName}`);
+  }
+};
+
+// 3. Accessing properties using Dot Notation
+console.log(user.firstName); // Output: 'spider'
+
+// 4. Accessing properties using Bracket Notation (useful for dynamic keys)
+const keyName = 'age';
+console.log(user[keyName]); // Output: 30
+
+// 5. Adding or updating properties
+user.lastName = 'Doe';      // Adds a new property
+user.age = 31;              // Updates an existing property
+
+// 6. Deleting a property
+delete user.isEmployee;
+
+// 7. Calling the object's method
+user.greet(); // Output: 'Hello, my name is spider
