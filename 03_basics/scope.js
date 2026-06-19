@@ -26,3 +26,15 @@ function one(){
 
 }
 one()
+
+
+if (true) {
+    const username = "Shivang"
+    if (username === "Spider") {
+        const website = " youtube"
+         console.log(username + website);
+    }
+    console.log(website);
+}
+
+console.log(username);
