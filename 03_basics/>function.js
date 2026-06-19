@@ -26,3 +26,18 @@ function addTwoNumbers(number1, number2){
 const result = addTwoNumbers(3, 5)
 
 console.log("Result: ", result);
+
+
+
+function loginUserMessage(username = "Cooper"){
+    if(!username){
+        console.log("PLease enter a username");
+        return
+    }
+    return `${username} just logged in`
+}
+
+console.log(loginUserMessage("Shivang"))
+console.log(loginUserMessage("Kuma"))
+
+
