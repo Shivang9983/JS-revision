@@ -13,3 +13,16 @@ if (true) {
  console.log(b);
  console.log(c);
 
+function one(){
+    const username = "Shivang"
+
+    function two(){
+        const website = "github"
+        console.log(username);
+    }
+     console.log(website);
+
+     two()
+
+}
+one()
