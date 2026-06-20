@@ -51,3 +51,21 @@ const createUser = (id, name) => ({ id: id, name: name });
 
 console.log(createUser(1, "Alex")); 
 
+
+
+class Counter {
+  constructor() {
+    this.count = 0;
+    
+  
+    setInterval(function() {
+      this.count++; // Error: Cannot read properties of undefined
+    }, 1000);
+
+    // Arrow function: 'this' lexically binds to the Counter instance
+    setInterval(() => {
+      this.count++;
+      console.log(this.count); // Correctly increments
+    }, 1000);
+  }
+}
