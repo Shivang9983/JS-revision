@@ -41,3 +41,13 @@ console.log(addTwo(3, 4))
 const myArray = [2, 5, 3, 7, 8]
 
 myArray.forEach()
+
+
+
+const createUser = (id, name) => { id: id, name: name };
+
+
+const createUser = (id, name) => ({ id: id, name: name });
+
+console.log(createUser(1, "Alex")); 
+
