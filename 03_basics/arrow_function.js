@@ -14,3 +14,12 @@ user.username = "thor"
 user.welcomeMessage()
 
 console.log(this);
+
+
+const bone =  () => {
+    let username = "hitesh"
+    console.log(this);
+}
+
+
+bone()
