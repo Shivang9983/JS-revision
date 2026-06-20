@@ -52,3 +52,17 @@ addTwo(5)
 const addTwo = function(num){
     return num + 2
 }
+
+// Immediately Invoked Function Expressions (IIFE)
+
+(function chai(){
+    // named IIFE
+    console.log(`DB CONNECTED`);
+})();
+
+( (name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+} )('Avenger')
+
+
+
