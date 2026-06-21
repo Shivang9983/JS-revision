@@ -50,3 +50,20 @@ if (userLoggedIn && debitCard && 2==3) {
 if (loggedInFromGoogle || loggedInFromEmail) {
     console.log("User logged in");
 }
+
+// core example
+
+
+let role = "admin";
+
+switch (role) {
+  case "guest":
+    console.log("Read-only access.");
+    break;
+  case "admin":
+    console.log("Full access granted."); // This block executes
+    break; // Prevents "fall-through" execution into the next case
+  default:
+    console.log("Access denied.");
+}
+
