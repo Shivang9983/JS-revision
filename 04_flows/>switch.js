@@ -60,3 +60,48 @@ console.log(analyzeServerResponse({ status: 401, isTokenExpired: true }));
 
 console.log(analyzeServerResponse({ status: 404 })); 
 // Output: Failure: Request rejected with status 404.
+
+
+
+
+function configureUserAccess(role, department) {
+  let accessLevel;
+
+  switch (role.toLowerCase()) {
+   
+    case "admin":
+    case "superuser":
+    case "owner":
+      accessLevel = "Full Root Access";
+      break;
+
+    
+    case "manager":
+      console.log(`Notification sent to ${department} head.`);
+   
+    case "employee":
+    case "staff":
+      accessLevel = "Standard Write Access";
+      break;
+   
+    case "guest":
+    case "visitor": {
+      const expirationHours = 24; 
+      accessLevel = `Temporary Read Access (${expirationHours}hr limit)`;
+      break;
+    }
+ 
+    default:
+      accessLevel = "No Access Permitted";
+  }
+
+  return accessLevel;
+}
+
+console.log(configureUserAccess("SuperUser", "IT")); 
+
+console.log(configureUserAccess("Manager", "Engineering")); 
+
+console.log(configureUserAccess("Guest", "Sales")); 
+
+
