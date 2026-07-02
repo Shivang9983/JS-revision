@@ -48,4 +48,17 @@ for (let i = 1; i<=a; i++){
     console.log();
 }
 
+// pattern == 3
+
+let Prompt = require('prompt-sync')();
+let a = Number(Prompt("enter your Number: "));
+
+for (let i = a; i>=1; i--){
+    for (let j = 1; j<=i; j++){
+        process.stdout.write("* ");
+    }
+    console.log();
+}
+
+
 
